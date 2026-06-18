@@ -2,7 +2,7 @@
     "name": "mage2kishan/module-checkout-success",
     "description": "Modern, configurable checkout success page for Magento 2. Replaces the default order confirmation with a two-column or single-column layout showing order details, items with thumbnails, shipping/billing addresses, order totals, payment/shipping method, guest account creation prompt, CMS block slot, and custom tracking scripts with order variable placeholders. Fully admin-configurable with per-section visibility toggles.",
     "type": "magento2-module",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "license": "proprietary",
     "keywords": [
         "magento2",

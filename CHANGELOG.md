@@ -4,7 +4,19 @@ All notable changes to this extension are documented here. The format
 is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/).
 
-## [1.0.0] — Initial release
+## [1.0.4] - 2026-06-18
+
+### Changed
+- README rewritten to match the standard Panth Infotech template: added
+  SEO meta comment, Quick Answer block, Who Is It For section, grouped
+  Key Features, full Configuration table matching system.xml, How It
+  Works walkthrough, Quick Links table, and closing CTA. Canonical and
+  all Marketplace links now point to the live product page. Removed
+  inaccurate commercemarketplace.adobe.com links.
+
+---
+
+## [1.0.0] - Initial release
 
 ### Added
 - **Custom checkout success page** replacing the default Magento order
