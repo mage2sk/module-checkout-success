@@ -66,12 +66,8 @@ class Data extends AbstractHelper
         return $this->getConfigValue('tracking', 'custom_scripts', $storeId);
     }
 
-    /**
-     * Replace variables in custom scripts
-     */
     public function processVariables(string $content, array $orderData): string
     {
-        // Escape values for JS context since custom scripts are output inside <script> tags
         $replacements = [
             '{{orderId}}' => $this->escaper->escapeJs((string) ($orderData['increment_id'] ?? '')),
             '{{orderTotal}}' => $this->escaper->escapeJs((string) ($orderData['grand_total'] ?? '')),

@@ -26,10 +26,9 @@ class CreateSuccessCmsBlock implements DataPatchInterface
 
         try {
             $this->blockRepository->getById($identifier);
-            // Already exists — skip
+
             return $this;
         } catch (\Exception $e) {
-            // Does not exist — create it
         }
 
         $content = <<<'HTML'

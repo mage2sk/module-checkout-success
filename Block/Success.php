@@ -195,11 +195,6 @@ class Success extends Template
         return $order && $order->getCustomerIsGuest();
     }
 
-    /**
-     * Get product thumbnail images keyed by item ID
-     *
-     * @return array<int, string>
-     */
     public function getOrderItemImages(): array
     {
         if ($this->orderItemImages !== null) {
@@ -225,9 +220,6 @@ class Success extends Template
         return $this->orderItemImages;
     }
 
-    /**
-     * Get the coupon code used on the order
-     */
     public function getCouponCode(): ?string
     {
         $order = $this->getOrder();
@@ -238,9 +230,6 @@ class Success extends Template
         return $coupon ? (string) $coupon : null;
     }
 
-    /**
-     * Get customer email from the order
-     */
     public function getCustomerEmail(): ?string
     {
         $order = $this->getOrder();
@@ -283,9 +272,6 @@ class Success extends Template
         return $this->getBaseUrl();
     }
 
-    /**
-     * Whether the order has at least one invoice (PDF download available)
-     */
     public function hasInvoices(): bool
     {
         $order = $this->getOrder();
@@ -295,9 +281,6 @@ class Success extends Template
         return $order->hasInvoices();
     }
 
-    /**
-     * URL to print/download invoice PDF
-     */
     public function getInvoicePrintUrl(): string
     {
         $order = $this->getOrder();
@@ -307,9 +290,6 @@ class Success extends Template
         return $this->getUrl('sales/order/printInvoice', ['order_id' => $order->getId()]);
     }
 
-    /**
-     * Render the CMS block configured in admin (panth_checkout_success/content/cms_block)
-     */
     public function getCmsBlockHtml(): string
     {
         $blockId = $this->helper->getCmsBlockId();

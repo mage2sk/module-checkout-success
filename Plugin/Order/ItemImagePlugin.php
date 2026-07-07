@@ -20,9 +20,6 @@ class ItemImagePlugin
         $this->imageHelper = $imageHelper;
     }
 
-    /**
-     * After getOrder, attach image URLs to the block for item rendering
-     */
     public function afterToHtml(Items $subject, string $result): string
     {
         $order = $subject->getOrder();
