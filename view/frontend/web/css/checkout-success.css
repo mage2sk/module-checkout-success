@@ -1,8 +1,8 @@
 /* ============================================
-   Panth CheckoutSuccess — Modern Order Confirmation
+   Panth CheckoutSuccess - Modern Order Confirmation
    ============================================ */
 
-/* Hide default Magento success blocks — multiple selectors for all themes */
+/* Hide default Magento success blocks - multiple selectors for all themes */
 .panth-checkout-success .checkout-success,
 .panth-checkout-success .checkout-registration,
 .checkout-onepage-success .checkout-success,
@@ -27,7 +27,7 @@ body.panth-checkout-success .page-title-wrapper,
 }
 
 /* -------------------------------------------
-   Header — Centered hero section
+   Header - Centered hero section
    ------------------------------------------- */
 .panth-success-header {
     text-align: center;
@@ -456,7 +456,7 @@ body.panth-checkout-success .page-title-wrapper,
 }
 
 /* -------------------------------------------
-   TABLET+ — Two-Column Grid (768px+)
+   TABLET+ - Two-Column Grid (768px+)
    ------------------------------------------- */
 @media screen and (min-width: 768px) {
     .panth-success-grid {
@@ -513,7 +513,7 @@ body.panth-checkout-success .page-title-wrapper,
     display: none !important;
 }
 
-/* Shipping address — plain text, no link colors */
+/* Shipping address - plain text, no link colors */
 .panth-success-page .panth-address a {
     color: #1a1a2e !important;
     text-decoration: none !important;

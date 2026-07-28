@@ -190,14 +190,14 @@ bin/magento module:status Panth_CheckoutSuccess
 
 After install, place a test order to confirm the new success page appears. Then open:
 ```
-Admin → Stores → Configuration → Panth Extensions → Checkout Success Page
+Admin -> Stores -> Configuration -> Panth Extensions -> Checkout Success Page
 ```
 
 ---
 
 ## Configuration
 
-Go to **Stores → Configuration → Panth Extensions → Checkout Success Page**.
+Go to **Stores -> Configuration -> Panth Extensions -> Checkout Success Page**.
 
 | Setting | Group | Default | Description |
 |---|---|---|---|

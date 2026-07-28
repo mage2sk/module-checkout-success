@@ -1,4 +1,4 @@
-# Panth Checkout Success — User Guide
+# Panth Checkout Success - User Guide
 
 Panth_CheckoutSuccess replaces the default Magento order confirmation
 page with a modern, fully configurable success page. This guide walks
@@ -67,25 +67,25 @@ Success Page**.
 
 Toggle visibility for each section independently:
 
-- **Show Order Number** — order number in the details card
-- **Show Order Date** — order date in the details card
-- **Show Ordered Items** — product list with thumbnails, SKUs, qty, and row totals
-- **Show Order Totals** — subtotal, shipping, tax, discount, grand total
-- **Show Shipping Address** — shipping address (billing shown only when different)
-- **Show Payment Method** — payment method name
-- **Show Create Account** — account creation prompt for guest customers
-- **Show Continue Shopping** — button linking back to the home page
-- **Additional CMS Block** — select a CMS block to render below order details
+- **Show Order Number** - order number in the details card
+- **Show Order Date** - order date in the details card
+- **Show Ordered Items** - product list with thumbnails, SKUs, qty, and row totals
+- **Show Order Totals** - subtotal, shipping, tax, discount, grand total
+- **Show Shipping Address** - shipping address (billing shown only when different)
+- **Show Payment Method** - payment method name
+- **Show Create Account** - account creation prompt for guest customers
+- **Show Continue Shopping** - button linking back to the home page
+- **Additional CMS Block** - select a CMS block to render below order details
 
 ### Appearance
 
-- **Page Layout** — "Two Column (Details + Summary)" or "Single Column (Centered)"
-- **Thank You Title** — main heading displayed at the top
-- **Thank You Message** — optional subheading below the title
+- **Page Layout** - "Two Column (Details + Summary)" or "Single Column (Centered)"
+- **Thank You Title** - main heading displayed at the top
+- **Thank You Message** - optional subheading below the title
 
 ### Tracking & Scripts
 
-- **Custom Scripts** — raw HTML/JS injected into the success page. Supports variable placeholders that are replaced with real order data at render time.
+- **Custom Scripts** - raw HTML/JS injected into the success page. Supports variable placeholders that are replaced with real order data at render time.
 
 ---
 
@@ -109,7 +109,7 @@ Checkout Success Page > Appearance > Page Layout**.
 
 ## 5. CMS block slot
 
-The module installs a sample CMS block called **"Checkout Success —
+The module installs a sample CMS block called **"Checkout Success -
 Trust Signals"** (identifier: `panth_checkout_success_bottom`) during
 `setup:upgrade`. This block displays four trust-signal cards: Free
 Returns, Fast Shipping, 24/7 Support, and Secure Payments.
@@ -117,7 +117,7 @@ Returns, Fast Shipping, 24/7 Support, and Secure Payments.
 To use it:
 1. Go to **Stores > Configuration > Panth Extensions > Checkout Success
    Page > Content Sections > Additional CMS Block**
-2. Select "Checkout Success — Trust Signals" (or any other CMS block)
+2. Select "Checkout Success - Trust Signals" (or any other CMS block)
 3. Save and flush cache
 
 You can edit the block content at **Content > Blocks** in the admin.
@@ -129,7 +129,7 @@ You can edit the block content at **Content > Blocks** in the admin.
 Inject conversion tracking code (GA4, Facebook Pixel, etc.) that
 automatically includes order data.
 
-**Example — Google Analytics 4 purchase event:**
+**Example - Google Analytics 4 purchase event:**
 
 ```html
 <script>
@@ -173,7 +173,7 @@ All values are escaped for safe use inside JavaScript.
 | Product thumbnails missing | Product has no thumbnail image assigned | Assign a thumbnail image to the product in the catalog |
 | CMS block not rendering | Block not selected in config, or block is inactive | Check config setting and ensure the CMS block is active |
 | Custom scripts not appearing | Custom Scripts field is empty or module disabled | Enter your script in the Tracking & Scripts config section |
-| Session expired — fallback message shown | Customer revisited the success page after session expired | This is expected behavior; a friendly fallback message is displayed |
+| Session expired - fallback message shown | Customer revisited the success page after session expired | This is expected behavior; a friendly fallback message is displayed |
 
 ---
 

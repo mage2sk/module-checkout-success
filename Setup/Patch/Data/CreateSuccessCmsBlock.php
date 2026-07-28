@@ -39,14 +39,14 @@ class CreateSuccessCmsBlock implements DataPatchInterface
                 <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0D9488" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
             </div>
             <h4>Free Returns</h4>
-            <p>Changed your mind? Return any item within 30 days — no questions asked.</p>
+            <p>Changed your mind? Return any item within 30 days - no questions asked.</p>
         </div>
         <div class="panth-info-item">
             <div class="panth-info-icon">
                 <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0D9488" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
             </div>
             <h4>Fast Shipping</h4>
-            <p>Most orders ship within 1–2 business days. Track your package anytime.</p>
+            <p>Most orders ship within 1-2 business days. Track your package anytime.</p>
         </div>
         <div class="panth-info-item">
             <div class="panth-info-icon">
@@ -115,7 +115,7 @@ HTML;
 
         $block = $this->blockFactory->create();
         $block->setIdentifier($identifier);
-        $block->setTitle('Checkout Success — Trust Signals');
+        $block->setTitle('Checkout Success - Trust Signals');
         $block->setContent($content);
         $block->setIsActive(true);
         $block->setStoreId([0]);
