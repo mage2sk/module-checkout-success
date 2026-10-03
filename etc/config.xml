@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <panth_checkout_success>
+            <general>
+                <enabled>1</enabled>
+            </general>
+            <content>
+                <show_order_number>1</show_order_number>
+                <show_order_date>1</show_order_date>
+                <show_order_items>1</show_order_items>
+                <show_order_totals>1</show_order_totals>
+                <show_shipping_info>1</show_shipping_info>
+                <show_payment_info>1</show_payment_info>
+                <show_create_account>1</show_create_account>
+                <show_continue_shopping>1</show_continue_shopping>
+            </content>
+            <style>
+                <layout>two-column</layout>
+                <thank_you_title>Thank you for your order!</thank_you_title>
+                <thank_you_message>We've received your order and will process it shortly. You'll receive a confirmation email with tracking details.</thank_you_message>
+            </style>
+            <tracking>
+                <custom_scripts></custom_scripts>
+            </tracking>
+        </panth_checkout_success>
+    </default>
+</config>

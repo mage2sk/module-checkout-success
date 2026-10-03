@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="Panth_CheckoutSuccess::css/checkout-success.css"/>
+    </head>
+    <body>
+        <attribute name="class" value="panth-checkout-success"/>
+        <referenceBlock name="page.main.title" remove="true"/>
+        <referenceBlock name="checkout.success" remove="true"/>
+        <referenceBlock name="checkout.registration" remove="true"/>
+    </body>
+</page>

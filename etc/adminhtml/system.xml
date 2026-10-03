@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="panth_checkout_success" translate="label" type="text" sortOrder="35" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>Checkout Success Page</label>
+            <tab>panth</tab>
+            <resource>Panth_CheckoutSuccess::config</resource>
+
+            <group id="general" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>General</label>
+                <field id="enabled" translate="label comment" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enable Custom Success Page</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment>Replace the default Magento checkout success page with a modern, informative layout</comment>
+                </field>
+            </group>
+
+            <group id="content" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Content Sections</label>
+                <comment>Choose which sections to display on the success page</comment>
+                <field id="show_order_number" translate="label comment" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Show Order Number</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment>Order number in the page header and in Order Details</comment>
+                </field>
+                <field id="show_order_date" translate="label" type="select" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Show Order Date</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="show_order_items" translate="label" type="select" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Show Ordered Items</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="show_order_totals" translate="label" type="select" sortOrder="40" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Show Order Totals</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="show_shipping_info" translate="label comment" type="select" sortOrder="50" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Show Shipping Address</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment>Shows the shipping address card and the shipping method in Order Details</comment>
+                </field>
+                <field id="show_payment_info" translate="label" type="select" sortOrder="60" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Show Payment Method</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="show_create_account" translate="label comment" type="select" sortOrder="70" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Show Create Account</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment>Shows a Create Account button to guest customers when registration is allowed and the order email has no account yet. The registration form is pre-filled from the order.</comment>
+                </field>
+                <field id="show_continue_shopping" translate="label" type="select" sortOrder="80" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Show Continue Shopping Button</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="cms_block" translate="label comment" type="select" sortOrder="90" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Additional CMS Block</label>
+                    <source_model>Panth\CheckoutSuccess\Model\Config\Source\CmsBlock</source_model>
+                    <comment>Optional CMS block displayed below the order details. Choose None to hide it. The block must be active and assigned to the store view or All Store Views.</comment>
+                </field>
+            </group>
+
+            <group id="style" translate="label" type="text" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Appearance</label>
+                <field id="layout" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Page Layout</label>
+                    <source_model>Panth\CheckoutSuccess\Model\Config\Source\SuccessLayout</source_model>
+                </field>
+                <field id="thank_you_title" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Thank You Title</label>
+                </field>
+                <field id="thank_you_message" translate="label" type="textarea" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Thank You Message</label>
+                </field>
+            </group>
+
+            <group id="tracking" translate="label" type="text" sortOrder="40" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Tracking &amp; Scripts</label>
+                <field id="custom_scripts" translate="label comment" type="textarea" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Custom Scripts</label>
+                    <comment><![CDATA[HTML/JS injected into the success page. Supports variables (JavaScript-escaped): <code>{{orderId}}</code>, <code>{{orderTotal}}</code>, <code>{{orderSubtotal}}</code>, <code>{{orderCurrency}}</code>, <code>{{customerEmail}}</code>, <code>{{paymentTitle}}</code>, <code>{{shippingTitle}}</code>, <code>{{couponCode}}</code>, <code>{{orderItemCount}}</code>, <code>{{shippingAmount}}</code>, <code>{{taxAmount}}</code>, <code>{{discountAmount}}</code>]]></comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
